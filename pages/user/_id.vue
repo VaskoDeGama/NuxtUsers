@@ -13,8 +13,8 @@ import UserProfile from '@/components/UserProfile'
 import {mapGetters} from 'vuex'
 
 export default {
-  validate({ params }) {
-    return /^\d+$/.test(params.id)
+  validate({params, store}) {
+    return store.getters['GET_USER_ID'] === params.id
   },
   components: {
     UserProfile,
