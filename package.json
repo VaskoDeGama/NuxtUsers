@@ -1,7 +1,7 @@
 {
-  "name": "bgs-test",
+  "name": "users-test",
   "version": "1.0.0",
-  "description": "Bgs-group test task",
+  "description": "my awesome test task",
   "author": "VaskoDeGama (karmenyuk@yandex.ru)",
   "private": true,
   "scripts": {
@@ -13,9 +13,12 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
-    "nuxt": "^2.0.0"
+    "@nuxtjs/axios": "^5.12.1",
+    "nuxt": "^2.0.0",
+    "vuelidate": "^0.7.5"
   },
   "devDependencies": {
+    "@nuxtjs/vuetify": "^1.11.2",
     "babel-eslint": "^10.0.1",
     "eslint": "^4.19.1",
     "eslint-friendly-formatter": "^4.0.1",
