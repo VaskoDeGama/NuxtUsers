@@ -1,28 +1,34 @@
 <template>
   <v-app>
     <v-main>
-      <v-container class="fill-height" fluid>
-        <user-profile></user-profile>
+      <v-container class="fill-height justify-center" fluid>
+        <div class="text-center">
+          <nuxt-link v-bind:to="'/user/' + userId">User profile</nuxt-link>
+        </div>
       </v-container>
     </v-main>
   </v-app>
 </template>
 
 <script>
-import UserProfile from '@/components/UserProfile'
+import { mapGetters } from "vuex";
 
 export default {
+
   components: {
-    UserProfile,
+
   },
   middleware: 'isAuthenticated',
   computed: {
-
+    ...mapGetters({
+      userId: 'GET_USER_ID'
+    })
+  },
+  mounted() {
   }
 }
 </script>
 
-<style>
-
+<style lang="scss">
 </style>
 

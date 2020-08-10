@@ -40,7 +40,11 @@ module.exports = {
     '@nuxtjs/vuetify',
   ],
   axios: {
-
+    baseURL: 'http://localhost:3000/',
+    //proxy: true,
+  },
+  proxy: {
+    //'/api/': 'http://localhost:3000/',
   },
   build: {
     /*
