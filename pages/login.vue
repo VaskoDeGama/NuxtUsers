@@ -10,9 +10,22 @@
 
 <script>
 import LoginForm from '@/components/LoginForm'
+import {mapActions} from 'vuex'
   export default {
+    serverPrefetch() {
+      this.getCookie()
+      console.log('get cookey')
+    },
     components: {
       LoginForm,
-    }
+    },
+    mounted() {
+      this.getCookie()
+    },
+    methods: {
+      ...mapActions({
+        getCookie: 'GET_COOKIES'
+      })
+    },
   }
 </script>

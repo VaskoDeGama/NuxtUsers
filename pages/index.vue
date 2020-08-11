@@ -11,10 +11,13 @@
 </template>
 
 <script>
-import { mapGetters } from "vuex";
+import { mapGetters, mapActions } from "vuex";
 
 export default {
+  async serverPrefetch() {
+    await this.getCookie()
 
+  },
   components: {
 
   },
@@ -22,10 +25,15 @@ export default {
   computed: {
     ...mapGetters({
       userId: 'GET_USER_ID'
-    })
+    }),
   },
-  mounted() {
+  methods: {
+    ...mapActions({
+      getCookie: 'GET_COOKIES'
+    })
   }
+
+
 }
 </script>
 

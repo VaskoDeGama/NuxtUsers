@@ -10,11 +10,19 @@
 
 <script>
 import UserProfile from '@/components/UserProfile'
-import {mapGetters} from 'vuex'
+import {mapActions, mapGetters} from 'vuex'
 
 export default {
-  validate({params, store}) {
-    return store.getters['GET_USER_ID'] === params.id
+  validate({params}){
+    return Boolean(params.id)
+  },
+  async serverPrefetch() {
+    await this.getCookie()
+  },
+  methods: {
+    ...mapActions({
+      getCookie: 'GET_COOKIES'
+    })
   },
   components: {
     UserProfile,

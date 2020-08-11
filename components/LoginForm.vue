@@ -105,7 +105,8 @@ export default {
   },
   methods: {
     ...mapActions({
-      login: 'LOG_IN'
+      login: 'LOG_IN',
+      setCookies: 'SET_COOKIES'
     }),
     async loginHandler(){
       this.errors = []
@@ -116,7 +117,11 @@ export default {
         if (user) {
            if(this.password === user.password) {
              this.userId = user._id
-             this.login(this.userId).then((_) => this.$router.push({path: `/user/${this.userId}`}))
+             this.login(this.userId).then((_) => {
+               const appData = {isAuth: true, userId: this.userId }
+               this.setCookies(appData)
+               this.$router.push({path: `/user/${this.userId}`})
+             })
            } else {
              this.errors.push('Wrong email or password')
            }

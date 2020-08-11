@@ -17,7 +17,7 @@ module.exports = {
     '@/node_modules/vuetify/dist/vuetify.min.css'
   ],
   plugins: [
-    '~/plugins/validate'
+    '~/plugins/validate',
   ],
   components: true,
   vuetify: {
@@ -27,7 +27,7 @@ module.exports = {
   /*
   ** Customize the progress bar color
   */
-  loading: {color: '#3B8070'},
+  loading: {color: '#000'},
   /*
   ** Build configuration
   */
@@ -35,6 +35,8 @@ module.exports = {
   target: 'server',
   modules: [
     '@nuxtjs/axios',
+    'cookie-universal-nuxt',
+
   ],
   buildModules: [
     '@nuxtjs/vuetify',

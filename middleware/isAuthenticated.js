@@ -1,5 +1,6 @@
 export default function ({ store, redirect }) {
-  if (!store.state.isAuthenticated) {
+  if (!store.$cookies.get('appData').isAuth) {
     return redirect('/login')
+
   }
 }
