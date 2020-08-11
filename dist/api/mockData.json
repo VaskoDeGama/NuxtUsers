@@ -1,0 +1,67 @@
+[
+  {
+    "_id": "5f3141da4f113e825bc7bea7",
+    "picture": "https://picsum.photos/300",
+    "password": "password",
+    "age": 35,
+    "eyeColor": "brown",
+    "name": {
+      "first": "Hardin",
+      "last": "Parker"
+    },
+    "email": "hardin.parker@undefined.name",
+    "favoriteFruit": "strawberry"
+  },
+  {
+    "_id": "5f3141da4899b89aa0f74504",
+    "picture": "https://picsum.photos/300",
+    "password": "password",
+    "age": 26,
+    "eyeColor": "brown",
+    "name": {
+      "first": "Florine",
+      "last": "Salas"
+    },
+    "email": "florine.salas@undefined.biz",
+    "favoriteFruit": "banana"
+  },
+  {
+    "_id": "5f3141da4d905e363dde0139",
+    "picture": "https://picsum.photos/300",
+    "password": "password",
+    "age": 22,
+    "eyeColor": "green",
+    "name": {
+      "first": "Rosemary",
+      "last": "Hansen"
+    },
+    "email": "rosemary.hansen@undefined.biz",
+    "favoriteFruit": "strawberry"
+  },
+  {
+    "_id": "5f3141da961ca14b1a182895",
+    "picture": "https://picsum.photos/300",
+    "password": "password",
+    "age": 28,
+    "eyeColor": "blue",
+    "name": {
+      "first": "Lina",
+      "last": "Cardenas"
+    },
+    "email": "lina.cardenas@undefined.net",
+    "favoriteFruit": "strawberry"
+  },
+  {
+    "_id": "5f3141da195222d7900bdd76",
+    "picture": "https://picsum.photos/300",
+    "password": "password",
+    "age": 34,
+    "eyeColor": "blue",
+    "name": {
+      "first": "Celeste",
+      "last": "Gallegos"
+    },
+    "email": "celeste.gallegos@undefined.io",
+    "favoriteFruit": "strawberry"
+  }
+]
