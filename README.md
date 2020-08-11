@@ -1,6 +1,7 @@
-# bgs-test
+# Nuxt Users
 
-> Bgs-group test task
+> Awesome application on Nuxt.js with Vue,Vuex,Vuetify
+  
 
 ## Build Setup
 
@@ -21,3 +22,4 @@ $ npm run generate
 
 For detailed explanation on how things work, checkout the [Nuxt.js docs](https://github.com/nuxt/nuxt.js).
 
+## Use with docker

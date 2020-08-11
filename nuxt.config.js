@@ -32,7 +32,10 @@ module.exports = {
   ** Build configuration
   */
   mode: 'universal',
-  target: 'server',
+  target: 'static',
+  router: {
+    base: '/NuxtUsers/'
+  },
   modules: [
     '@nuxtjs/axios',
     'cookie-universal-nuxt',

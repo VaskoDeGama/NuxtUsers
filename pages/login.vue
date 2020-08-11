@@ -14,7 +14,6 @@ import {mapActions} from 'vuex'
   export default {
     serverPrefetch() {
       this.getCookie()
-      console.log('get cookey')
     },
     components: {
       LoginForm,
