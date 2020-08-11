@@ -29,9 +29,10 @@ export const actions = {
       console.log(e)
     }
   },
-  LOG_OUT: function ({commit}) {
+  LOG_OUT: function ({commit, dispatch}) {
     commit('CLEAR_USER')
     commit('SET_IS_AUTH', false)
+    dispatch('REMOVE_COOKIES')
   },
   SET_COOKIES: function ({commit}, appData) {
     this.$cookies.set('appData', appData)
@@ -41,6 +42,9 @@ export const actions = {
     if (appData.isAuth && appData.userId.length === 24) {
       await dispatch('LOG_IN', appData.userId)
     }
+  },
+  REMOVE_COOKIES:async function ({}) {
+    this.$cookies.set('appData', {isAuth:false})
   },
   async nuxtServerInit ({ dispatch }, { req }) {
     //await dispatch('GET_COOKIES')

@@ -31,9 +31,9 @@ module.exports = {
   /*
   ** Build configuration
   */
-  target: 'static',
+  target: 'server',
   router: {
-    base: '/nuxtusers/'
+    base: '/'
   },
   modules: [
     '@nuxtjs/axios',
