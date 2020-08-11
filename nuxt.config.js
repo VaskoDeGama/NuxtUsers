@@ -31,10 +31,9 @@ module.exports = {
   /*
   ** Build configuration
   */
-  mode: 'universal',
   target: 'static',
   router: {
-    base: '/NuxtUsers/'
+    base: '/nuxtusers/'
   },
   modules: [
     '@nuxtjs/axios',
@@ -46,10 +45,8 @@ module.exports = {
   ],
   axios: {
     baseURL: 'http://localhost:3000/',
-    //proxy: true,
   },
   proxy: {
-    //'/api/': 'http://localhost:3000/',
   },
   build: {
     /*
